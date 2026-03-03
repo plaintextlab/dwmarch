@@ -1,0 +1,23 @@
+[bita@archlinux ~]$ cat /etc/fstab
+# Static information about the filesystems.
+# See fstab(5) for details.
+
+# <file system> <dir> <type> <options> <dump> <pass>
+# /dev/nvme1n1p2
+UUID=25570869-bf8e-4753-9633-b3eaa04f874b	/         	btrfs     	rw,relatime,compress=zstd:3,ssd,discard=async,space_cache=v2,subvol=/@	0 0
+
+# /dev/nvme1n1p2
+UUID=25570869-bf8e-4753-9633-b3eaa04f874b	/home     	btrfs     	rw,relatime,compress=zstd:3,ssd,discard=async,space_cache=v2,subvol=/@home	0 0
+
+# /dev/nvme1n1p2
+UUID=25570869-bf8e-4753-9633-b3eaa04f874b	/var/cache/pacman/pkg	btrfs     	rw,relatime,compress=zstd:3,ssd,discard=async,space_cache=v2,subvol=/@pkg	0 0
+
+# /dev/nvme1n1p2
+UUID=25570869-bf8e-4753-9633-b3eaa04f874b	/var/log  	btrfs     	rw,relatime,compress=zstd:3,ssd,discard=async,space_cache=v2,subvol=/@log	0 0
+
+# /dev/nvme1n1p1
+UUID=517A-E674      	/boot     	vfat      	rw,relatime,fmask=0022,dmask=0022,codepage=437,iocharset=ascii,shortname=mixed,utf8,errors=remount-ro	0 2
+
+LABEL=1TB_NVME /mnt/1TB_NVME auto nosuid,nodev,nofail,x-gvfs-show 0 0
+LABEL=1TB_SSD /mnt/1TB_SSD auto nosuid,nodev,nofail,x-gvfs-show 0 0
+LABEL=Data /mnt/2TB_HDD auto nosuid,nodev,nofail,x-gvfs-show 0 0

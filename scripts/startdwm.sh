@@ -15,6 +15,7 @@ fi
 picom &
 dunst &
 dwmblocks &
+udiskie --no-notify --automount &
 
 feh --bg-fill --randomize ~/dwmarch/wallpapers/*
 
