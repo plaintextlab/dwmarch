@@ -1,0 +1,5 @@
+dwm/config.h
+dwm/dwm
+dwm/dwm.o
+dwm/*.orig
+dwm/*.rej
