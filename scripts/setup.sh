@@ -55,7 +55,8 @@ sudo pacman -S --needed --noconfirm \
 	dunst \
 	code \
 	firefox \
-	exfatprogs
+	exfatprogs \
+	flatpak
 
 
 # Audio - pipewire

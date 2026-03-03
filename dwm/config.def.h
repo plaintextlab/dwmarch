@@ -7,6 +7,31 @@ Applied patches:
 
 dwm-systray-6.7.diff
 
+*/
+
+/*
+Patches yet to add
+
+vanitygaps
+xresources
+restartsig
+swallow
+always center
+dragmfact
+tilemovemouse
+actualfullscreen
+pertag
+status2d
+hide_vacant_tags
+accessnthmonitor
+bulkill
+
+----optionals------
+appicons
+alpha
+chargecolor - for laptops
+
+
 
 
 */
