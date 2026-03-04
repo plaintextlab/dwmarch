@@ -23,7 +23,7 @@ Patches yet to add:
 
 swallow
 always center
-dragmfact
+
 actualfullscreen
 status2d
 hide_vacant_tags
