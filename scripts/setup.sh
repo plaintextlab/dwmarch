@@ -11,21 +11,27 @@ sudo pacman -Sy
 # Install xorg goodies
 echo "Installing nvidia driver and xorg..."
 sudo pacman -S --needed --noconfirm \
-	xorg-server \
+	xorg-server \	
+	xorg-xinit \
+	xorg-xrandr \
+	xorg-xkill \
+	linux-headers \
+	linux-zen-headers
+
+echo "Installing nvidia..."
+sudo pacman -S --needed --noconfirm \
 	dkms \
 	libva-nvidia-driver \
 	nvidia-open-dkms \
 	nvidia-utils \
 	lib32-nvidia-utils \
 	nvidia-settings \
-	opencl-nvidia \
+	opencl-nvidia
+
+echo "Installing vulkan..."
+sudo pacman -S --needed --noconfirm \
 	vulkan-icd-loader \
-	lib32-vulkan-icd-loader \
-	xorg-xinit \
-	xorg-xrandr \
-	xorg-xkill \
-	linux-headers \
-	linux-zen-headers \
+	lib32-vulkan-icd-loader
 
 # Install essential tools and services
 echo "Installing essential tools and services..."
@@ -56,7 +62,10 @@ sudo pacman -S --needed --noconfirm \
 	code \
 	firefox \
 	exfatprogs \
-	flatpak
+	flatpak \
+	fzf \
+	bat \
+	ueberzugpp
 
 
 # Audio - pipewire
