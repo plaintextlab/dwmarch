@@ -10,6 +10,7 @@ dwm-cfacts-vanitygaps-6.4_combo.diff
 tilemovemouse (Patched tilemovemouse.c for compatibility issue with dwm 6.0+)
 dwm-restartsig-20180523-6.2.diff
 dwm-xresources-20210827-138b405.diff
+dwm-pertag-20200914-61bb8b2.diff
 
 */
 
@@ -21,7 +22,6 @@ swallow
 always center
 dragmfact
 actualfullscreen
-pertag
 status2d
 hide_vacant_tags
 accessnthmonitor
@@ -230,6 +230,7 @@ static const Key keys[] = {
 	{ MODKEY|ShiftMask,	           	XK_w, 	   spawn,          SHCMD("~/dwmarch/scripts/changewall.sh")},	
 	/*{ MODKEY,	                	XK_a, 	   spawn,          {.v = myscriptrunner } },*/
 	{ MODKEY, 						XK_a, 	   spawn, 		   SHCMD("alacritty -e sh -c '~/dwmarch/scripts/myscriptrunner.sh; exec sh'") },
+	
 };
 
 /* button definitions */
