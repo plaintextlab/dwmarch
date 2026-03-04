@@ -12,6 +12,7 @@ dwm-restartsig-20180523-6.2.diff
 dwm-xresources-20210827-138b405.diff
 dwm-pertag-20200914-61bb8b2.diff
 dwm-restoreafterrestart-20220709-d3f93c7.diff
+dwm-dragmfact-6.2.diff
 
 
 */
