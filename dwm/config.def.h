@@ -38,6 +38,8 @@ chargecolor - for laptops
 */
 
 
+#define SESSION_FILE "/tmp/dwm-session"
+
 /* appearance */
 static unsigned int borderpx  = 1;        /* border pixel of windows */
 static unsigned int snap      = 32;       /* snap pixel */
