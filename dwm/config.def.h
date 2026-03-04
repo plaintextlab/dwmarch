@@ -8,19 +8,17 @@ Applied patches:
 dwm-systray-6.7.diff
 dwm-cfacts-vanitygaps-6.4_combo.diff
 tilemovemouse (Patched tilemovemouse.c for compatibility issue with dwm 6.0+)
-
+dwm-restartsig-20180523-6.2.diff
 
 */
 
 /*
-Patches yet to add
+Patches yet to add:
 
 xresources
-restartsig
 swallow
 always center
 dragmfact
-
 actualfullscreen
 pertag
 status2d
