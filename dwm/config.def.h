@@ -186,7 +186,8 @@ static const Key keys[] = {
 	TAGKEYS(                        XK_7,                      6)
 	TAGKEYS(                        XK_8,                      7)
 	TAGKEYS(                        XK_9,                      8)
-	{ MODKEY|ShiftMask,             XK_q,      quit,           {0} },
+	/*{ MODKEY|ShiftMask,             XK_q,      quit,           {0} },*/
+	{ MODKEY|ShiftMask, 			XK_r,      quit,           {1} }, 
 	{ MODKEY,            			XK_n,      spawn, 		   {.v = (const char*[]){ "redshift", "-O", "3500", NULL } } },
 	{ MODKEY|ShiftMask,  			XK_n,      spawn, 		   {.v = (const char*[]){ "redshift", "-x", NULL } } },
 
