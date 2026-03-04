@@ -6,3 +6,4 @@ ln -sfn ~/dwmarch/dots/rofi ~/.config/
 ln -sfn ~/dwmarch/dots/starship ~/.config/
 ln -sfn ~/dwmarch/dots/.Xresources ~/
 ln -sfn ~/dwmarch/dots/.bashrc ~/
+ln -sfn ~/dwmarch/dots/wal ~/.config/

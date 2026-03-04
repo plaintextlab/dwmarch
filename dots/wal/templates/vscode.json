@@ -1,0 +1,40 @@
+{
+  "name": "Wal Theme",
+  "type": "dark",
+  "colors": {
+    "editor.background": "{background}",
+    "editor.foreground": "{foreground}",
+    "editorCursor.foreground": "{cursor}",
+    "editor.lineHighlightBackground": "{color0}",
+    "editor.selectionBackground": "{color2}",
+
+    "activityBar.background": "{color0}",
+    "sideBar.background": "{color0}",
+    "titleBar.activeBackground": "{color0}",
+
+    "statusBar.background": "{color0}",
+    "statusBar.foreground": "{foreground}"
+  },
+  "tokenColors": [
+    {
+      "scope": "comment",
+      "settings": { "foreground": "{color8}" }
+    },
+    {
+      "scope": "keyword",
+      "settings": { "foreground": "{color4}" }
+    },
+    {
+      "scope": "string",
+      "settings": { "foreground": "{color2}" }
+    },
+    {
+      "scope": "variable",
+      "settings": { "foreground": "{color7}" }
+    },
+    {
+      "scope": "constant.numeric",
+      "settings": { "foreground": "{color3}" }
+    }
+  ]
+}

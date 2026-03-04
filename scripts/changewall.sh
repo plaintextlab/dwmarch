@@ -15,4 +15,11 @@ EOF
 #xrdb -merge ~/.cache/wal/dwm.Xresources
 #kill -HUP $(pidof dwm)
 
+
+~/dwmarch/scripts/starship_colors.sh
+
+~/dwmarch/scripts/vscode_colors.sh
+
+
+
 ~/dwmarch/scripts/restartdwm.sh
