@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
-xrdb -merge ~/.Xresources
 wal -R
+xrdb -merge ~/.Xresources
 xrdb -merge ~/.cache/wal/colors.Xresources
+xrdb -merge ~/.cache/wal/dwm.Xresources
 kill -HUP $(pidof dwm)

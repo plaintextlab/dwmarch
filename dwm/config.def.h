@@ -224,8 +224,8 @@ static const Key keys[] = {
 	{ 0, 							XF86XK_AudioLowerVolume, spawn, SHCMD("~/dwmarch/scripts/volume_slider.sh down") },
 	{ 0, 							XF86XK_AudioRaiseVolume, spawn, SHCMD("~/dwmarch/scripts/volume_slider.sh up") },
 
-	{ MODKEY|ShiftMask, 			XK_w, 		spawn, 			{.v = (const char*[]){ "sh", "-c", "feh --bg-fill --randomize ~/dwmarch/wallpapers/*", NULL } } },
-	
+	/*{ MODKEY|ShiftMask, 			XK_w, 		spawn, 			{.v = (const char*[]){ "sh", "-c", "feh --bg-fill --randomize ~/dwmarch/wallpapers/*", NULL } } },*/	
+	{ MODKEY|ShiftMask,	           	XK_w, 	   spawn,          SHCMD("~/dwmarch/scripts/changewall.sh")},	
 };
 
 /* button definitions */

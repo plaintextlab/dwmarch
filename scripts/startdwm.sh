@@ -1,5 +1,7 @@
 #!/bin/sh
 
+export XDG_SESSION_TYPE=x11
+
 # Kill existing instances
 pkill -x picom 2>/dev/null
 pkill -x dunst 2>/dev/null
@@ -17,9 +19,10 @@ dunst &
 dwmblocks &
 udiskie --no-notify --automount &
 
-feh --bg-fill --randomize ~/dwmarch/wallpapers/*
-
+wal -R
 xrdb -merge ~/.Xresources
+xrdb -merge ~/.cache/wal/colors.Xresources
+xrdb -merge ~/.cache/wal/dwm.Xresources
 
 # Start dwm
 exec dwm
