@@ -129,6 +129,8 @@ static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont,
 static const char *termcmd[]  = { "alacritty", NULL };
 static const char *filemanager[] = { "alacritty", "-e", "yazi", NULL };
 static const char *browser[] = { "firefox", NULL };
+/*static const char *myscriptrunner[] = { "alacritty", "-e", "~/dwmarch/scripts/myscriptrunner.sh", NULL };*/
+
 
 /*
 * Xresources preferences to load at startup
@@ -226,6 +228,8 @@ static const Key keys[] = {
 
 	/*{ MODKEY|ShiftMask, 			XK_w, 		spawn, 			{.v = (const char*[]){ "sh", "-c", "feh --bg-fill --randomize ~/dwmarch/wallpapers/*", NULL } } },*/	
 	{ MODKEY|ShiftMask,	           	XK_w, 	   spawn,          SHCMD("~/dwmarch/scripts/changewall.sh")},	
+	/*{ MODKEY,	                	XK_a, 	   spawn,          {.v = myscriptrunner } },*/
+	{ MODKEY, 						XK_a, 	   spawn, 		   SHCMD("alacritty -e sh -c '~/dwmarch/scripts/myscriptrunner.sh; exec sh'") },
 };
 
 /* button definitions */
