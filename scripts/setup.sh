@@ -109,6 +109,13 @@ yay -S jmtpfs
 #use jmtpfs ~/phone (or whatever dir you want) to mount your phone there
 
 
+echo "Installing flatpak apps"
+# Install flatpak apps
+flatpak install -y com.vysp3r.ProtonPlus
+flatpak install -y org.videolan.VLC
+
+
+
 
 echo "Installation complete. Reboot..."
 
