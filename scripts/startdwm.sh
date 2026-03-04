@@ -19,5 +19,7 @@ udiskie --no-notify --automount &
 
 feh --bg-fill --randomize ~/dwmarch/wallpapers/*
 
+xrdb -merge ~/.Xresources
+
 # Start dwm
 exec dwm

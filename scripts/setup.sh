@@ -109,5 +109,6 @@ yay -S jmtpfs
 #use jmtpfs ~/phone (or whatever dir you want) to mount your phone there
 
 
+
 echo "Installation complete. Reboot..."
 

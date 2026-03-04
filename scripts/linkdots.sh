@@ -1,24 +1,8 @@
-#!/usr/bin/env bash
-
-set -euo pipefail
-
-# Resolve script directory
-SCRIPT_DIR="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" &>/dev/null && pwd)"
-BASE_DIR="$(dirname "$SCRIPT_DIR")"
-
-DOTS_DIR="$BASE_DIR/dots"
-CONFIG_DIR="$HOME/.config"
-
-mkdir -p "$CONFIG_DIR"
-
-for dir in "$DOTS_DIR"/*/; do
-    name="$(basename "$dir")"
-    target="$CONFIG_DIR/$name"
-
-    if [ -e "$target" ] || [ -L "$target" ]; then
-        rm -rf "$target"
-    fi
-
-    ln -s "$dir" "$target"
-    echo "Linked $name → $target"
-done
+ln -sfn ~/dwmarch/dots/alacritty ~/.config/
+ln -sfn ~/dwmarch/dots/mpd/ ~/.config/
+ln -sfn ~/dwmarch/dots/mpv ~/.config/
+ln -sfn ~/dwmarch/dots/picom ~/.config/
+ln -sfn ~/dwmarch/dots/rofi ~/.config/
+ln -sfn ~/dwmarch/dots/starship ~/.config/
+ln -sfn ~/dwmarch/dots/.Xresources ~/
+ln -sfn ~/dwmarch/dots/.bashrc ~/
