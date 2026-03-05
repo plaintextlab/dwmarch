@@ -237,6 +237,7 @@ static const Key keys[] = {
 	{ MODKEY|ShiftMask,	           	XK_w, 	   spawn,          SHCMD("~/dwmarch/scripts/changewall.sh")},	
 	/*{ MODKEY,	                	XK_a, 	   spawn,          {.v = myscriptrunner } },*/
 	{ MODKEY, 						XK_a, 	   spawn, 		   SHCMD("alacritty -e sh -c '~/dwmarch/scripts/myscriptrunner.sh; exec sh'") },
+	{ MODKEY, 						XK_Escape, spawn, 			SHCMD("alacritty -e sh -c '~/dwmarch/scripts/taskmgr.sh; exec sh'") },
 	
 };
 
