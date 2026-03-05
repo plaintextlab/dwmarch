@@ -8,6 +8,8 @@ LDFLAGS := -lX11
 # # OpenBSD (uncomment)
 #LDFLAGS += -L/usr/X11R6/lib -I/usr/X11R6/include
 
+CFLAGS += -DCLICKABLE_BLOCKS
+
 all: options dwmblocks
 
 options:

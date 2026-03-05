@@ -20,6 +20,6 @@ EOF
 
 ~/dwmarch/scripts/vscode_colors.sh
 
-
+pywalfox update
 
 ~/dwmarch/scripts/restartdwm.sh

@@ -1,6 +1,6 @@
-configuration{
+configuration {
     modi: "run,window,combi";
-    icon-theme: "Gruvbox dark";
+    icon-theme: "Gruvbox Dark";
     show-icons: true;
     terminal: "alacritty";
     drun-display-format: "{icon} {name}";
@@ -13,9 +13,17 @@ configuration{
     sidebar-mode: true;
     font: "JetBrains Mono 12";
     width: 800;
+}
 
-} 
+@import "~/.cache/wal/colors-rofi-dark.rasi"
 
-@theme "~/.config/rofi/themes/gruvbox.rasi"
-
-
+* {
+    bg-col:        @background;
+    bg-col-light:  @color0;
+    border-col:    @color8;
+    selected-col:  @color4;
+    blue:          @color4;
+    fg-col:        @foreground;
+    fg-col2:       @color1;
+    grey:          @color8;
+}

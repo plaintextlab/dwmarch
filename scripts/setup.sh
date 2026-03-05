@@ -65,7 +65,10 @@ sudo pacman -S --needed --noconfirm \
 	flatpak \
 	fzf \
 	bat \
-	ueberzugpp
+	ueberzugpp \
+	ffmpegthumbnailer \
+	udiskie \
+	udisks2
 
 
 # Audio - pipewire
@@ -108,7 +111,12 @@ rm -rf yay
 yay -S jmtpfs
 #use jmtpfs ~/phone (or whatever dir you want) to mount your phone there
 
-yay -S eww
+# Auto mount usb external drives
+sudo systemctl enable --now udisks2.service
+
+
+# Firefox theme from pywal
+yay -S python-pywalfox
 
 
 echo "Installing flatpak apps"

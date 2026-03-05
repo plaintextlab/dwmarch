@@ -24,7 +24,7 @@ fi
 picom &
 dunst &
 dwmblocks &
-udiskie --no-notify --automount &
+udiskie --tray &
 greenclip daemon &
 
 wal -R

@@ -244,7 +244,7 @@ static const Key keys[] = {
 	{ MODKEY, 						XK_a, 	   spawn, 		   SHCMD("alacritty -e sh -c '~/dwmarch/scripts/myscriptrunner.sh; exec sh'") },
 	{ MODKEY, 						XK_Escape, spawn, 		   SHCMD("alacritty -e sh -c '~/dwmarch/scripts/taskmgr.sh; exec sh'") },		
 	{ MODKEY, 						XK_v, 	   spawn, 		   SHCMD("~/dwmarch/scripts/clipboard.sh") },
-	
+	{ MODKEY|ShiftMask, 			XK_Print,  spawn, 		   SHCMD("~/dwmarch/scripts/record_screen.sh") },
 };
 
 /* button definitions */
