@@ -14,7 +14,7 @@ dwm-pertag-20200914-61bb8b2.diff
 dwm-restoreafterrestart-20220709-d3f93c7.diff
 dwm-dragmfact-6.2.diff
 dwm-hide_vacant_tags-6.4.diff
-
+dwm-tag-preview-6.3.diff
 
 */
 

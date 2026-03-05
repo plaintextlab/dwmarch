@@ -108,6 +108,8 @@ rm -rf yay
 yay -S jmtpfs
 #use jmtpfs ~/phone (or whatever dir you want) to mount your phone there
 
+yay -S eww
+
 
 echo "Installing flatpak apps"
 # Install flatpak apps
