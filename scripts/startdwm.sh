@@ -25,6 +25,7 @@ picom &
 dunst &
 dwmblocks &
 udiskie --no-notify --automount &
+greenclip daemon &
 
 wal -R
 xrdb -merge ~/.Xresources

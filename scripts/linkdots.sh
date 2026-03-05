@@ -7,3 +7,4 @@ ln -sfn ~/dwmarch/dots/starship ~/.config/
 ln -sfn ~/dwmarch/dots/.Xresources ~/
 ln -sfn ~/dwmarch/dots/.bashrc ~/
 ln -sfn ~/dwmarch/dots/wal ~/.config/
+ln -sfn ~/dwmarch/dots/greenclip.toml ~/.config/

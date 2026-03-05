@@ -15,6 +15,7 @@ dwm-restoreafterrestart-20220709-d3f93c7.diff
 dwm-dragmfact-6.2.diff
 dwm-hide_vacant_tags-6.4.diff
 dwm-tag-preview-6.3.diff
+dwm-swallow-6.3.diff
 
 */
 
@@ -22,7 +23,7 @@ dwm-tag-preview-6.3.diff
 Patches yet to add:
 
 
-swallow
+
 always center
 
 actualfullscreen
@@ -46,6 +47,7 @@ chargecolor - for laptops
 /* appearance */
 static unsigned int borderpx  = 1;        /* border pixel of windows */
 static unsigned int snap      = 32;       /* snap pixel */
+static const int swallowfloating    = 0;        /* 1 means swallow floating windows by default */
 static const int scalepreview       = 4;        /* preview scaling (display w and h / scalepreview) */
 static const int previewbar         = 1;        /* show the bar in the preview window */
 static const unsigned int gappih    = 20;       /* horiz inner gap between windows */
@@ -83,9 +85,11 @@ static const Rule rules[] = {
 	 *	WM_CLASS(STRING) = instance, class
 	 *	WM_NAME(STRING) = title
 	 */
-	/* class      instance    title       tags mask     isfloating   monitor */
-	{ "Gimp",     NULL,       NULL,       0,            1,           -1 },
-	{ "Firefox",  NULL,       NULL,       1 << 8,       0,           -1 },
+	/* class     instance  title           tags mask  isfloating  isterminal  noswallow  monitor */
+	{ "Gimp",    NULL,     NULL,           0,         1,          0,           0,        -1 },
+	{ "Firefox", NULL,     NULL,           1 << 8,    0,          0,          -1,        -1 },
+	{ "St",      NULL,     NULL,           0,         0,          1,           0,        -1 },
+	{ NULL,      NULL,     "Event Tester", 0,         0,          0,           1,        -1 }, /* xev */
 };
 
 /* layout(s) */
@@ -137,6 +141,7 @@ static const char *termcmd[]  = { "alacritty", NULL };
 static const char *filemanager[] = { "alacritty", "-e", "yazi", NULL };
 static const char *browser[] = { "firefox", NULL };
 /*static const char *myscriptrunner[] = { "alacritty", "-e", "~/dwmarch/scripts/myscriptrunner.sh", NULL };*/
+
 
 
 /*
@@ -237,7 +242,8 @@ static const Key keys[] = {
 	{ MODKEY|ShiftMask,	           	XK_w, 	   spawn,          SHCMD("~/dwmarch/scripts/changewall.sh")},	
 	/*{ MODKEY,	                	XK_a, 	   spawn,          {.v = myscriptrunner } },*/
 	{ MODKEY, 						XK_a, 	   spawn, 		   SHCMD("alacritty -e sh -c '~/dwmarch/scripts/myscriptrunner.sh; exec sh'") },
-	{ MODKEY, 						XK_Escape, spawn, 			SHCMD("alacritty -e sh -c '~/dwmarch/scripts/taskmgr.sh; exec sh'") },
+	{ MODKEY, 						XK_Escape, spawn, 		   SHCMD("alacritty -e sh -c '~/dwmarch/scripts/taskmgr.sh; exec sh'") },		
+	{ MODKEY, 						XK_v, 	   spawn, 		   SHCMD("~/dwmarch/scripts/clipboard.sh") },
 	
 };
 
