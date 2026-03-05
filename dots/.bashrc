@@ -15,3 +15,5 @@ alias dwmc='cd ~/dwmarch/dwm && rm -f config.h && sudo make clean install && cd 
 alias logout='pkill -KILL -u $USER'
 
 eval "$(starship init bash)"
+# Created by `pipx` on 2026-03-05 09:07:03
+export PATH="$PATH:/home/bita/.local/bin"
